@@ -55,3 +55,14 @@ criarConta("Bruno Costa", 500);
 depositar(1, 200);
 sacar(2, 100);
 listarContas();
+// Membro 4 - atualiza o titulo e adiciona resumo()
+// ALTERE a linha do titulo para:
+let titulo = "SISTEMA DE TAREFAS";
+function resumo() {
+  let total = tarefas.length;
+  let feitas = tarefas.filter((t) => t.concluida).length;
+  console.log("=== " + titulo + " ===");
+  console.log("Total: " + total + " | Feitas: " + feitas);
+}
+// Teste final
+resumo();
